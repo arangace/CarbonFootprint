@@ -1,25 +1,28 @@
 html {
   /* font-family: "Manrope", sans-serif;
   font-family: "Tiro Devanagari Sanskrit", serif; */
+  --main-color: #1f3a3d;
+  --secondary-color: #ffffff;
+  --accent-color: #55431d;
   height: 100%;
 }
 .main-color {
-  color: #1f3a3d;
+  color: var(--main-color);
 }
 .main-background-color {
-  background-color: #1f3a3d;
+  background-color: var(--main-color);
 }
 .secondary-color {
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 .secondary-background-color {
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
 }
 .accent-color {
-  color: #55431d;
+  color: var(--accent-color);
 }
 .accent-background-color {
-  background-color: #55431d;
+  background-color: var(--accent-color);
 }
 .main-font {
   font-family: "Manrope", sans-serif;
@@ -56,11 +59,10 @@ button {
 }
 .nav {
   position: absolute;
-  width: 99vw;
+  width: 95vw;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 4rem;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -108,12 +110,32 @@ button {
   height: 100%;
   grid-column: 1 / span 2;
   grid-row: 1;
+}
+.supporting-background-image {
+  position: relative;
+  object-fit: cover;
+}
+.supporting-image-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 1rem;
+  position: absolute;
+  left: 26%;
+  top: 30%;
+  color: white;
+  font-weight: bold;
 }
+.secondary-content-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 #container-left {
   grid-column: 1;
   grid-row: 2;
@@ -128,12 +150,4 @@ button {
   grid-template-rows: repeat(2, 1fr);
   column-gap: 10px;
   row-gap: 10px;
-}
-.secondary-content-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 1rem;
 }
