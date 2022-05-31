@@ -21,7 +21,12 @@ html {
 .accent-background-color {
   background-color: #55431d;
 }
-
+.main-font {
+  font-family: "Manrope", sans-serif;
+}
+.secondary-font {
+  font-family: "Tiro Devanagari Sanskrit", serif;
+}
 body {
   margin: 0;
   padding: 0;
@@ -34,7 +39,10 @@ a {
   text-decoration: none;
 }
 .nav {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -48,7 +56,6 @@ a {
   justify-content: flex-end;
 }
 #main-nav {
-  font-family: "Manrope", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -75,18 +82,16 @@ a {
   width: 100%;
   justify-items: stretch;
   align-items: center;
-  grid-template-columns: 30 70;
-  grid-template-rows: 2;
-}
-.content-container * {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: 50 50;
+  grid-template-rows: 60% 1fr;
 }
 #supporting-image {
+  height: 100%;
   grid-column: 1 / span 2;
   grid-row: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 #container-left {
   grid-column: 1;
@@ -97,9 +102,17 @@ a {
   grid-row: 2;
   display: grid;
   justify-items: stretch;
-  align-items: center;
+  align-items: flex-start;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   column-gap: 10px;
   row-gap: 10px;
+}
+.secondary-content-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem;
 }
