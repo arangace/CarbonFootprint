@@ -43,13 +43,13 @@
                         SEARCH-ICON
                     </li>
                     <li>
-                        <button class="accent-background-color">
-                            RENEW
+                        <button onclick="handleModal(true)" class="accent-background-color">
+                            REGISTER
                         </button>
                     </li>
                     <li>
                         <button class="accent-background-color">
-                            DONATE
+                            LOGIN
                         </button>
                     </li>
                 </div>
@@ -58,27 +58,71 @@
         </nav>
     </header>
     <main class="main-container secondary-background-color">
-        <div class="content-container">
+        <div id="trigger-modal" class="modal-container secondary-font">
+            <div class="modal secondary-background-color main-color">
+                <div id="modal-header">
+                    <h2>New CT Member</h2>
+                    <span onclick="handleModal(false)" class="close">&times;</span>
+                </div>
+                <div id="ct-form">
+                    <form onsubmit="handleSubmit(false)">
+                        <section id="userDetails">
+                            <h3>User Details</h3>
+                            <label for="given-name">Given name:</label>
+                            <input type="text" id="given-name" name="given-name" autofocus>
+                            <label for="surname">Surname:</label>
+                            <input type="text" id="surname" name="surname">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password">
+                        </section>
+                        <section id="addresses">
+                            <h3>Addresses</h3>
+                            <label for="home-address">Home address:</label>
+                            <input type="text" id="home-address" name="home-address">
+                            <label for="work-address">Work address:</label>
+                            <input type="text" id="work-address" name="work-address">
+                        </section>
+                        <section id="contacts">
+                            <h3>Contacts</h3>
+                            <label for="mobile-number">Mobile number:</label>
+                            <input type="tel" id="mobile-number" name="mobile-number">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </section>
+                        <button class="accent-background-color">SUBMIT</button>
+                    </form>
+                </div>
+
+            </div>
+            <div id="backdrop" onclick="handleModal(false)">
+            </div>
+        </div>
+        <div class=" content-container">
             <section class="secondary-font" id="supporting-image">
                 <img class="supporting-background-image" src="background-image.jpg"
                     alt="Carbon Emission Background Image" width="100%" height="100%">
                 <div class="supporting-image-text ">
                     <h1 class="main-color">Carbon Emissions Continue to Skyrocket</h1>
-                    <h2 class="main-color" style="text-align: right;">We can only solve our planet's most complex
-                        problems if we bring
+                    <h2 class="main-color" style="text-align: right;">We can only solve our planet's most
+                        complex
+                        problems<br> if we bring
                         together
                         a diversity of ideas.<br>
                         Together, we can share
-                        these ideas and create new, innovative solutions.<br> Join us as we move towards a zero emission
+                        these ideas and create new, innovative solutions.<br> Join us as we move towards a
+                        zero emission
                         world.
                     </h2>
-                    <button class="accent-background-color">REGISTER NOW</button>
+                    <button class="accent-background-color" onclick="handleModal(true)">REGISTER NOW</button>
                 </div>
             </section>
             <section class="secondary-content-container main-color secondary-font" id="container-left">
                 <div>
                     <h2>A Future Where People and Nature Thrive</h2>
-                    <p>By maximizing our ability to effect change between now and 2030, we can shape a brighter future
+                    <p>By maximizing our ability to effect change between now and 2030, we can shape a
+                        brighter future
                         for
                         people and our planet.
                     </p>
@@ -86,23 +130,27 @@
             </section>
             <section class="secondary-content-container main-color main-font" id="container-right">
                 <div>
-                    <h2>Who We Are ></h2>
-                    <p>We impact conservation in more than 70 countries and territories thanks to our members, staff and
+                    <h3>Who We Are ></h3>
+                    <p>We impact conservation in more than 70 countries and territories thanks to our
+                        members, staff and
                         scientists.</p>
                 </div>
                 <div>
-                    <h2>What We Do ></h2>
-                    <p>Guided by science and equity, we find paths to solve climate change and biodiversity loss. We're
+                    <h3>What We Do ></h3>
+                    <p>Guided by science and equity, we find paths to solve climate change and biodiversity
+                        loss. We're
                         determined to make a major difference by 2030.</p>
                 </div>
                 <div>
-                    <h2>How To Help ></h2>
-                    <p>From volunteering to reducing your carbon footprint, there are so many ways you can get involved.
+                    <h3>How To Help ></h3>
+                    <p>From volunteering to reducing your carbon footprint, there are so many ways you can
+                        get involved.
                     </p>
                 </div>
                 <div>
-                    <h2>Donate To Our Mission ></h2>
-                    <p>Donate today and you'll be a member, funding urgent direct conservation and advocacy.</p>
+                    <h3>Donate To Our Mission ></h3>
+                    <p>Donate today and you'll be a member, funding urgent direct conservation and advocacy.
+                    </p>
                 </div>
             </section>
         </div>
