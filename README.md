@@ -8,6 +8,9 @@ Website was designed with accessbility and UI/UX in mind, to enhance user intera
 This design serves as a high fidelty design, encapsulating design principles as the focus over functionality.
 Therefore, most components do not have fully fledged functionality other than registration modals.
 
+Designed using vanilla JavaScript, HTML and CSS. Using no external libraries or packages.
+For full control over components and being in control to ensure design principles are upkept
+
 ### Gestalt Principles
 
 Applied Gestalt principles of design during the development of this website for a focus on enhanced UI/UX.
