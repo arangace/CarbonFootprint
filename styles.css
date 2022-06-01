@@ -104,6 +104,9 @@ button:hover {
   cursor: pointer;
   filter: brightness(85%);
 }
+#search-icon:hover {
+  cursor: pointer;
+}
 #sub-nav {
   display: flex;
   flex-direction: row;
@@ -126,8 +129,9 @@ button:hover {
   width: 100%;
   justify-items: stretch;
   align-items: center;
-  grid-template-columns: 30 70;
+  grid-template-columns: 30% 65%;
   grid-template-rows: 60% 1fr;
+  column-gap: 5%;
 }
 #supporting-image {
   height: 100%;
