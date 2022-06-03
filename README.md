@@ -18,6 +18,6 @@ Proximity, closure, similarity, continuity, perception, organisation and symmetr
 
 ### Disclaimer:
 
-Carbon Tiptoe is not a real organisation
+Carbon Tiptoe is not a real organisation.
 All images used on this website adhere to CC licencing.
 Text supplied on this website is not 100% accurate and is used for placeholder for the websites theme.
